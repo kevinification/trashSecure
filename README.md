@@ -1,4 +1,4 @@
-# Trash Secure 
+### Trash Secure 
 
 # These is a script that ensure that files and folders are shred beyond recovery
 # In kali linux the trash bin has 2 folders: Files and Info folder
