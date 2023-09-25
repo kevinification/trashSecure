@@ -3,11 +3,10 @@
 stty -echoctl
 
 BRed='\033[1;31m' 
-NC='\033[0m' # No Color
+NC='\033[0m'
 BBlue='\033[1;34m'
 BGreen='\033[1;32m'
 
-trap '' INT
 trap ''  QUIT
 trap ''  TSTP
 trap 'echo -e "${BBlue} [$(date +"%T")] ${NC} ${BGreen} GoodBye! ${NC}"' EXIT
@@ -49,12 +48,12 @@ check_packages(){
 	exit; fi
 }
 
-#Check if user is root
 if [ "$EUID" -ne 0 ]
   then
   	check_packages
   	banner
 	echo -e "${BBlue} [$(date +"%T")] Starting Secure Trash ${NC}"
+	echo -e "${BBlue} [$(date +"%T")] Press ${BRed} Ctrl + C ${NC} ${BBlue}to exit script ${NC}"
 	sleep 0.2
 	folder1=~/.local/share/Trash/files
 	folder2=~/.local/share/Trash/info

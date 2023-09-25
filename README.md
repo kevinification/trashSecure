@@ -10,4 +10,6 @@
 
 #### Note: Shred command is not recommmed for ssd hard drive, thus secure-delete can be used as an alternative
 
-
+## Kelvinification
+### trashSecure
+#### https://github.com/kevinification/trashSecure.git
