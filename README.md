@@ -13,3 +13,4 @@
 ## Kelvinification
 ### trashSecure
 #### https://github.com/kevinification/trashSecure.git
+### Version 3.2
