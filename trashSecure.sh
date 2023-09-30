@@ -53,6 +53,7 @@ if [ "$EUID" -ne 0 ]
   	check_packages
   	banner
 	echo -e "${BBlue} [$(date +"%T")] Starting Secure Trash ${NC}"
+ 	echo -e "${BBlue} [$(date +"%T")] https://github.com/kevinification/trashSecure ${NC}"
 	echo -e "${BBlue} [$(date +"%T")] Press ${BRed} Ctrl + C ${NC} ${BBlue}to exit script ${NC}"
 	sleep 0.2
 	folder1=~/.local/share/Trash/files
